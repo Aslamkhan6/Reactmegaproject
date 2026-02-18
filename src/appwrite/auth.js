@@ -1,8 +1,8 @@
 import config from "../config/config";
-import {client ,Account,ID} from "appwrite";
+import {Client ,Account,ID} from "appwrite";
 
 class AuthService{
-    client = new client();
+    client = new Client();
     account
     constructor(){
         this.client
@@ -41,10 +41,11 @@ class AuthService{
         try {
             return await this.account.get();
         } catch (error) {
-            throw error
+           
+            return null
             
         }
-        return null
+        
     }
 
     async logout(){
