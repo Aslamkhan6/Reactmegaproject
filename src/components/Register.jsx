@@ -92,4 +92,4 @@ const Register = () => {
   )
 }
 
-export default Signup
+export default Register
