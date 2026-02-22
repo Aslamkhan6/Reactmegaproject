@@ -1,7 +1,7 @@
-import React, { use, useCallback, useEffect } from 'react'
-import { set, useForm } from 'react-hook-form'
-import { Button, Input, RTE, Select } from './index'
-import appwriteService from '../appwrite/appwriteService'
+import React, {useCallback, useEffect } from 'react'
+import {useForm } from 'react-hook-form'
+import { Button, Input, RTE } from '../index'
+import appwriteService from '../../appwrite/conf'
 import { useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 const Postform = ({ post }) => {
@@ -59,7 +59,7 @@ const Postform = ({ post }) => {
                 <div>Postform</div>
             )
         }
-    }
+    
 
 const slugTransform = useCallback((value)=>{
     if(value && typeof value === "string"){
@@ -141,5 +141,5 @@ return ()=>
             </div>
         </form>
     );
-
+}
 export default Postform

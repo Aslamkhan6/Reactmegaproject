@@ -1,6 +1,6 @@
 import React, { Children } from 'react'
 
-const container = () => {
+const container = ({Children}) => {
   return (
     <div className='w-full max-w-7xl max-auto px-4'>
         {Children}</div>

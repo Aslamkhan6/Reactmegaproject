@@ -1,10 +1,10 @@
 import React from 'react'
-import {Button,Input,logo} from './index'
+import {Button,Input} from './index'
 import { login } from '../store/Authslice'
 import { useDispatch } from 'react-redux'
 import authService from '../appwrite/auth'
 import { useForm } from 'react-hook-form'
-import Logo from './index'
+import {Logo} from './index'
 import { Link ,NavLink,useNavigate} from 'react-router-dom'
 export const Login = () => {
     const navigate = useNavigate()

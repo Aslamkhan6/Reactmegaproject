@@ -103,7 +103,7 @@ async getPosts(quries=[Query.equal('status','active')]){
             quries,
         )
     } catch (error) {
-        log('error in get posts ',error);
+        console.log('error in get posts ',error);
         return false
     }
 }

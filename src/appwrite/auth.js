@@ -41,10 +41,11 @@ class AuthService{
         try {
             return await this.account.get();
         } catch (error) {
+            console.log("Error in getCurrentUser:", error);
            
-            return null
             
         }
+        return null;
         
     }
 
